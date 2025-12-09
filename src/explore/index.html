@@ -12,17 +12,47 @@
 <body>
     <!-- HEADER -->
     <header id="header"></header>
+    <div class="standard-container">
+        <h1>Explore the Universe</h1>
+        <p>Decide where you want to see your capsule end up!</p>
+    </div>
 
 
     <div class="explore-container">
         <!-- Dynamically generate popular locations from NASA's API tool. -->
          <!-- Example -->
         <section class="location-display">
-            <img src="" alt="">
-            <h3>Location Name</h3>
-            <p>Time to Travel to Location</p>
+            <img src="../public/images/jupiter.jpg" alt="Photo of Jupiter">
+            <p class="overlay-text">Place your capsule right here in our own solar system!</p>
         </section>
-        <a href="../index.html" class="learnMoreButton">Explore More</a>
+        <section>
+            <h3>Our Solar System</h3>
+            <p class="standard-container"><a href="./explore-locations.html?area=solar-system" class="learnMoreButton">Explore More</a></p>
+        </section>
+    </div>
+    <div class="explore-container">
+        <!-- Dynamically generate popular locations from NASA's API tool. -->
+        <!-- Example -->
+        <section class="location-display">
+            <img src="../public/images/milky-way.jpg" alt="Photo of the Milky Way">
+            <p class="overlay-text">Launch your capsule to the far reaches of the galaxy!</p>
+        </section>
+        <section>
+            <h3>Our Galaxy</h3>
+            <p class="standard-container"><a href="./explore-locations.html?area=galaxy" class="learnMoreButton">Explore More</a></p>
+        </section>
+    </div>
+    <div class="explore-container">
+        <!-- Dynamically generate popular locations from NASA's API tool. -->
+        <!-- Example -->
+        <section class="location-display">
+            <img src="../public/images/pillars-of-creation.jpg" alt="Photo of the Pillars of Creation">
+            <p class="overlay-text">Watch your capsule reach into the depths of deep space.</p>
+        </section>
+        <section>
+            <h3>Deep Space</h3>
+            <p class="standard-container"><a href="./explore-locations.html?area=deep-space" class="learnMoreButton">Explore More</a></p>
+        </section>
     </div>
 
     <footer id="footer"></footer>

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Sagittarius A*",
+    "description": "The supermassive black hole at the center of the Milky Way. It contains about 4 million times the mass of the Sun and shapes the dynamics of our entire galaxy.",
+    "type": "Supermassive Black Hole",
+    "distance_from_sun_miles": 1.52854e17
+  },
+  {
+    "name": "The Pillars of Creation",
+    "description": "Iconic structures of gas and dust located in the Eagle Nebula, known for active star formation and captured famously by the Hubble and James Webb telescopes.",
+    "type": "Star-Forming Region",
+    "distance_from_sun_miles": 3.82135e16
+  },
+  {
+    "name": "Messier 87 Black Hole (M87*)",
+    "description": "The first black hole ever imaged directly. Located in the Virgo Cluster, it is 6.5 billion times the mass of the Sun and emits powerful relativistic jets.",
+    "type": "Supermassive Black Hole",
+    "distance_from_sun_miles": 3.151144e20
+  },
+  {
+    "name": "The Boötes Void",
+    "description": "A gigantic cosmic void roughly 330 million light-years across with extremely few galaxies, often referred to as the 'Great Nothing.'",
+    "type": "Cosmic Void",
+    "distance_from_sun_miles": 4.1153e21
+  },
+  {
+    "name": "The Andromeda Galaxy",
+    "description": "The closest major galaxy to the Milky Way and on a collision course with us in about 4.5 billion years. It is larger than the Milky Way and contains a trillion stars.",
+    "type": "Spiral Galaxy",
+    "distance_from_sun_miles": 1.46975e19
+  },
+  {
+    "name": "The Carina Nebula",
+    "description": "A massive stellar nursery home to some of the most massive stars known, including Eta Carinae, a volatile star system that may go supernova soon.",
+    "type": "Nebula / Star-Forming Region",
+    "distance_from_sun_miles": 4.40925e16
+  },
+  {
+    "name": "The Bullet Cluster",
+    "description": "A pair of galaxy clusters that collided at high speed. It provides some of the strongest evidence for dark matter due to gravitational lensing effects.",
+    "type": "Galaxy Cluster",
+    "distance_from_sun_miles": 2.29281e22
+  },
+  {
+    "name": "GN-z11",
+    "description": "One of the most distant and oldest galaxies ever observed, formed only 400 million years after the Big Bang. It offers a window into the early universe.",
+    "type": "Ancient Galaxy",
+    "distance_from_sun_miles": 7.87786e22
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Proxima Centauri",
+    "description": "The closest known star to the Sun, located in the Alpha Centauri star system. Proxima Centauri is a red dwarf and is not visible to the naked eye.",
+    "distance_from_sun_miles": 24007800000000,
+    "type": "Red Dwarf"
+  },
+  {
+    "name": "Betelgeuse",
+    "description": "A massive red supergiant star in the constellation Orion, Betelgeuse is one of the largest visible stars and is nearing the end of its life. It may eventually explode as a supernova.",
+    "distance_from_sun_miles": 534120000000000,
+    "type": "Red Supergiant"
+  },
+  {
+    "name": "Stephenson 2-18",
+    "description": "Currently considered the largest known star by radius and volume, Stephenson 2-18 is a red supergiant in the constellation of Ara. It is a contender for the largest star in terms of size.",
+    "distance_from_sun_miles": 1715274000000000,
+    "type": "Red Supergiant"
+  },
+  {
+    "name": "Sirius",
+    "description": "The brightest star in the night sky, Sirius is a binary star system consisting of a white main-sequence star (Sirius A) and a faint white dwarf (Sirius B).",
+    "distance_from_sun_miles": 81369700000000,
+    "type": "Binary (Main Sequence + White Dwarf)"
+  },
+  {
+    "name": "Alpha Centauri A",
+    "description": "The primary component of the Alpha Centauri star system, Alpha Centauri A is a yellow main-sequence star that is slightly larger and more luminous than the Sun.",
+    "distance_from_sun_miles": 24007800000000,
+    "type": "Main Sequence"
+  },
+  {
+    "name": "Alpha Centauri B",
+    "description": "The secondary star in the Alpha Centauri system, Alpha Centauri B is a smaller, dimmer orange star, orbiting close to Alpha Centauri A.",
+    "distance_from_sun_miles": 24007800000000,
+    "type": "Main Sequence (Orange)"
+  },
+  {
+    "name": "Vega",
+    "description": "A bright star in the Lyra constellation, Vega is one of the most studied stars and is often used as a reference point for the definition of the standard for brightness (magnitude) in astronomy.",
+    "distance_from_sun_miles": 254398000000000,
+    "type": "Main Sequence (A-type)"
+  },
+  {
+    "name": "Arcturus",
+    "description": "The fourth-brightest star in the night sky, Arcturus is a red giant in the constellation Boötes. It has a much larger radius than the Sun and is nearing the end of its main-sequence life.",
+    "distance_from_sun_miles": 182419000000000,
+    "type": "Red Giant"
+  }
+]

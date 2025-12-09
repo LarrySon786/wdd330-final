@@ -27,9 +27,51 @@ function renderTemplate(template, parentElement, data, callback) {
 
 }
 
+export async function getJsonData(filename) {
+  try {
+    const response = await fetch(`../json/${filename}`);
+    if (!response.ok) {
+      throw new Error();
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 // *****************************************
 // Build Explore Webpage View
-export function buildLocationsDisplay(data) {
-  document.querySelector('');
+export function buildLocationsDisplay() {
+  let display = document.querySelector('.explore-container');
+}
 
+// export function buildDetailedLocationsDisplay() {
+//   const filename = URLSearchParams.get(location);
+//   let data = await getJsonData(filename);
+// }
+
+
+
+
+// **************************
+// GET LOCATION DATA
+// Will be used in a variety of locations to get local JSON file data
+
+export async function getLocationData() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const locationCategory = urlParams.get('area');
+    const jsonUrl = `../json/${locationCategory}.json`;
+    try {
+        const response = await fetch(jsonUrl);
+        if (!response.ok) {
+            throw new Error();
+        }
+        const data = await response.json();
+      console.log(data);
+      return data;
+
+    } catch (error) {
+        console.log(error);
+    }
 }

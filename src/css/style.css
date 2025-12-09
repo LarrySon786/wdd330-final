@@ -14,7 +14,7 @@
     --font-montserrat: "Montserrat",
         sans-serif;
 }
-
+ 
 * {
     font-family: var(--font-montserrat);
 }
@@ -50,6 +50,7 @@ header img {
     padding: 0.25rem;
     border-radius: 1rem;
     margin-top: 0.5rem;
+    animation: pulse 3s infinite ease-in-out;
 }
 
 header nav {
@@ -77,6 +78,23 @@ header nav a:hover {
     background-color: white;
     color: var(--baltic-blue)
 }
+
+/* HEADER ANIMATION */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+    50% {
+        transform: scale(1.3);
+        /* opacity: 0.6; */
+    }
+    100% {
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+}   
 
 /* Footer */
 footer {
@@ -152,6 +170,12 @@ footer {
     grid-template-columns: 2fr 1fr;
     margin: 1rem;
     color: white;
+    align-items: center;
+    place-content: center;
+    justify-items: center;
+    background-color: var(--vintage-lavender);
+    border-radius: 2rem;
+    border: 2px solid black;
 }
 
 .location-container section {
@@ -161,15 +185,183 @@ footer {
 .learnMoreButton {
     grid-column: 2/3;
     padding: 1.6rem;
+    max-height: 4rem;
     background-color: black;
     color: white;
     text-decoration: none;
     text-align: center;
     place-content: center;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-family: var(--font-science);
 }
 
+.location-display {
+    position: relative;
+}
+
+.location-display img {
+    max-width: 100%;
+}
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-top: 0rem;
+}
+
+/* Text over top of photos on EXPLORE PAGE */
+.location-display:hover .overlay-text {
+    opacity: 1;
+}
+
+.explore-container section h3 {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+/* EXPLORE PAGE LOCATIONS DISPLAY */
+
+.location-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.location-cards-container section {
+    margin: 1.5rem;
+    text-align: center;
+    place-items: center;
+    background-color: var(--shadow-gray);
+    color: white;
+    padding: 1rem;
+
+    & h3 {
+        font-size: 1.5rem;
+        background-color: black;
+        color: white;
+        border-radius: 2rem;
+        padding:1rem;
+        max-width:fit-content;
+    }
+}
+
+
+/* CAPSULE CUSTOMIZATION PAGE */
+
+.capsule-price-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & section {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: rgb(190, 190, 190);
+        text-align: center;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border: 2px solid black;
+    }
+}
+
+
+/* Get Started Form */
+.rocket-animation-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+
+.forms {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+    padding: 2rem;
+    margin: 1rem;
+    border: 2px solid white;
+
+    & fieldset {
+        display:grid;
+        background-color: #5D536B;
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    & fieldset select, input {
+        margin-bottom: 1.7rem;
+        margin-top: 0.1rem;
+        height: 2rem;
+        padding: 5px;
+    }
+
+    & fieldset input[type='submit'] {
+        margin-top: 1.8rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+        text-align: center;
+        height: 3rem;
+        background-color: var(--baltic-blue);
+        color: white;
+        font-weight: 700;
+        justify-items: center;
+    }
+    & fieldset input[type='submit']:hover {
+        animation: rocket
+    }
+}
+
+#rocket-animation {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    font-size: 3rem;
+    animation: rocket;
+    max-height: 90%;
+
+    & p {
+        max-width: 80%;
+        max-height: 1px;
+        text-align: center;
+        transform: rotate(-45deg);
+        animation: rocket ease-in 10s;
+    }
+
+    
+
+}
+
+@keyframes rocket {
+    0% {
+        margin-bottom: 0rem;
+    }
+    10% {
+        margin-bottom: 1rem;
+    }
+    20% {
+        margin-bottom: 3rem;
+    }
+    30% {
+        margin-bottom: 6rem;
+    }
+    40% {
+        margin-bottom: 10rem;
+    }
+    50% {
+        margin-bottom: 20rem;
+    }
+    100% {
+        margin-bottom: 1000rem;
+    }
+}
 
 
 @media screen and (max-width: 700px) {
@@ -189,5 +381,9 @@ footer {
                 font-family: var(--font-science);
             }
         }
+    .location-cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 }

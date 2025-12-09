@@ -4,14 +4,10 @@
 
 
 
-export async function fetchApiData(url, apiKey) {
+export async function fetchApiData(url) {
     try {
         const response = await fetch(url, {
             method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${apiKey}`
-            }
         });
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);

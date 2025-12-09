@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mercury",
+    "description": "The smallest planet in the Solar System and the closest to the Sun. It has a very thin atmosphere and experiences extreme temperature fluctuations.",
+    "distance_from_sun_miles": 35916443,
+    "gravity_strength_m/s2": 3.7
+  },
+  {
+    "name": "Venus",
+    "description": "Often referred to as Earth's 'sister planet' due to similar size, Venus has a thick, toxic atmosphere and surface temperatures hot enough to melt lead.",
+    "distance_from_sun_miles": 67244967,
+    "gravity_strength_m/s2": 8.87
+  },
+  {
+    "name": "Earth",
+    "description": "The only known planet to support life, Earth has a balanced atmosphere with oxygen, water, and suitable temperatures for life to thrive.",
+    "distance_from_sun_miles": 92955880,
+    "gravity_strength_m/s2": 9.81
+  },
+  {
+    "name": "Mars",
+    "description": "Known as the Red Planet due to its iron oxide-rich surface, Mars has the highest mountain and the deepest, longest valley in the Solar System.",
+    "distance_from_sun_miles": 141635047,
+    "gravity_strength_m/s2": 3.71
+  },
+  {
+    "name": "Jupiter",
+    "description": "The largest planet in the Solar System, Jupiter is a gas giant with a massive magnetic field and dozens of moons, including the largest, Ganymede.",
+    "distance_from_sun_miles": 483532898,
+    "gravity_strength_m/s2": 24.79
+  },
+  {
+    "name": "Saturn",
+    "description": "Famous for its stunning ring system, Saturn is another gas giant with many moons. It has a very low density, meaning it would float in water.",
+    "distance_from_sun_miles": 885887642,
+    "gravity_strength_m/s2": 10.44
+  },
+  {
+    "name": "Uranus",
+    "description": "An ice giant, Uranus is unique for rotating on its side, possibly due to a massive collision early in its history. It has faint rings and is composed mainly of water, ammonia, and methane.",
+    "distance_from_sun_miles": 1785078814,
+    "gravity_strength_m/s2": 8.69
+  },
+  {
+    "name": "Neptune",
+    "description": "The farthest planet from the Sun, Neptune is another ice giant with intense winds, dark storms, and a strong blue color due to methane in its atmosphere.",
+    "distance_from_sun_miles": 2793463713,
+    "gravity_strength_m/s2": 11.15
+  }
+]
