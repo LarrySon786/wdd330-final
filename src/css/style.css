@@ -315,7 +315,7 @@ footer {
         justify-items: center;
     }
     & fieldset input[type='submit']:hover {
-        animation: rocket
+        background-color: green;
     }
 }
 
@@ -332,7 +332,7 @@ footer {
         max-height: 1px;
         text-align: center;
         transform: rotate(-45deg);
-        animation: rocket ease-in 10s;
+        animation: rocket ease-in-out 10s infinite;
     }
 
     
@@ -340,28 +340,14 @@ footer {
 }
 
 @keyframes rocket {
-    0% {
-        margin-bottom: 0rem;
+    from {
+        transform: rotate(-45deg) translateY(0);
     }
-    10% {
-        margin-bottom: 1rem;
+    
+    to {
+        transform: rotate(-45deg) translateX(100rem) translateY(-100rem);
     }
-    20% {
-        margin-bottom: 3rem;
-    }
-    30% {
-        margin-bottom: 6rem;
-    }
-    40% {
-        margin-bottom: 10rem;
-    }
-    50% {
-        margin-bottom: 20rem;
-    }
-    100% {
-        margin-bottom: 1000rem;
-    }
-}
+} 
 
 
 @media screen and (max-width: 700px) {
