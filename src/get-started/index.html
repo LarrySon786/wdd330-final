@@ -7,6 +7,7 @@
     <title>Space Capsule | Explore</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/main.js" type="module"></script>
+    <script src="../js/get-started.js" type="module"></script>
     <link rel="icon" type="image/x-icon" href="../public/images/favicon.ico">
 </head>
 
@@ -16,7 +17,7 @@
     <!-- Application Form to Send Capsule -->
     <div class="rocket-animation-container">
         <div class="forms">
-            <form id="application-form">
+            <form id="application-form" action="thank-you.html" method="post">
                 <fieldset>
                     <legend></legend>
                     <label for="fname">*First Name</label>
@@ -32,14 +33,26 @@
                 <fieldset>
                     <legend></legend>
                     <label for="location-categories">*Choose Your Location</label>
-                    <select id="location-categories" name="location-categories"></select>
+                    <select id="location-categories" name="location-categories">
+                        <option disabled value="" selected>-- Please Choose an Option --</option>
+                        <option value="solar-system">Our Solar System</option>
+                        <option value="galaxy">Our Galaxy</option>
+                        <option value="deep-space">Deep Space</option>
+
+                    </select>
                     <label for="location-select"></label>
-                    <select id="location-select" name="location-select"></select>
+                    <select id="location-select" name="location-select" class="hidden"></select>
                 </fieldset>
                 <fieldset>
                     <legend></legend>
                     <label for="capsule-options">*Choose Your Capsule</label>
-                    <select id="capsule-options" name="capsule-options"></select>
+                    <select id="capsule-options" name="capsule-options">
+                        <option value="" selected disabled>-- Please Choose an Option --</option>
+                        <option value="photo-capsule">Photo Capsule</option>
+                        <option value="mini-capsule">Mini-Capsule</option>
+                        <option value="grand-deluxe-capsule">Grand-Deluxe Capsule</option>
+                    </select>
+                    <p id="price"></p>
                     <input type="submit" value="Launch Your Capsule!">
                 </fieldset>
             </form>

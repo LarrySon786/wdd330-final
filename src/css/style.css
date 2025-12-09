@@ -317,6 +317,13 @@ footer {
     & fieldset input[type='submit']:hover {
         background-color: green;
     }
+
+    & textarea {
+        height:7rem;
+        padding:0.5rem;
+        font-size: 1.1rem;
+        margin-top: 0.1rem;
+    }
 }
 
 #rocket-animation {
@@ -348,6 +355,12 @@ footer {
         transform: rotate(-45deg) translateX(100rem) translateY(-100rem);
     }
 } 
+
+/* APPLICATION FORM SELECTION FOR LOCATION */
+
+.hidden{
+    display:none;
+}
 
 
 @media screen and (max-width: 700px) {
