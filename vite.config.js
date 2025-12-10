@@ -11,7 +11,8 @@ export default defineConfig({
         main: resolve(__dirname, "src/index.html"),
         contact_us: resolve(__dirname, "src/contact-us/index.html"),
         explore: resolve(__dirname, "src/explore/index.html"),
-        get_started: resolve(__dirname, "src/get-started/index.html"), 
+        get_started: resolve(__dirname, "src/get-started/index.html"),
+        capsule: resolve(__dirname, "src/capsule/index.html"),
       },
     },
     supported: {
