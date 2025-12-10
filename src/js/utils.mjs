@@ -2,8 +2,8 @@
 // DISPLAY HEADER AND FOOTER
 
 export async function loadHeaderAndFooter() {
-  const headerLink = "/public/partials/header.html";
-    const footerLink = "/public/partials/footer.html";
+  const headerLink = "../public/partials/header.html";
+    const footerLink = "../public/partials/footer.html";
     const headerTemplate = await loadTemplate(headerLink);
     const footerTemplate = await loadTemplate(footerLink);
     const headerOnHtml = document.querySelector("#header");
