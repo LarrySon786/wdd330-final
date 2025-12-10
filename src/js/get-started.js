@@ -6,6 +6,8 @@ let price = document.querySelector('#price');
 let options = document.querySelector('#location-select');
 let selection = document.querySelector('#location-categories');
 
+
+
 selection.addEventListener('change', async function () {
     options.classList.remove('hidden')
     options.replaceChildren();
@@ -16,7 +18,12 @@ selection.addEventListener('change', async function () {
 
 capsule.addEventListener('change', async function () {
     price.replaceChildren();
+    let country = document.querySelector('#country').value;
     const selectedValue = event.target.value;
-    generateAndDisplayPrice(price, selectedValue);
+    generateAndDisplayPrice(price, selectedValue, country);
 })
+
+
+
+
 

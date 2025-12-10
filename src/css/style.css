@@ -149,7 +149,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     background-color: black;
-    border: solid var(--shadow-gray) 1px;
+    border: solid white 2px;
     border-radius: 2rem;
     padding: 1rem;
     margin: 0.5rem;
@@ -162,6 +162,47 @@ footer {
         font-style: italic;
     }
 }
+
+/* Page Title */
+
+.page-title {
+    text-align: center;
+    color: white;
+}
+
+/* HOME PAGE */
+#astronomy-picture-of-day {
+    place-items: center;
+    max-width: 100%;
+    background-color: var(--shadow-gray);
+    border: solid black 2px;
+    border-radius: 2rem;
+    padding: 1rem;
+    place-content: center;
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    
+
+    & p {
+        padding: 2rem;
+        text-align: left;
+        line-height: 1.3rem;
+        max-width: 50%;
+    }
+
+}
+
+.api-image {
+    max-width: 500px;
+    border: 2px solid white;
+    background-color: black;
+    padding: 2rem;
+    /* margin: 1rem; */
+    
+}
+
+
 
 /* EXPLORE PAGE */
 
