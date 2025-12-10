@@ -1,8 +1,6 @@
-import { buildPictureOfDay, fetchNasaApi } from "./utils.mjs"
+import { buildPictureOfDay } from "./utils.mjs"
 
 // NASA API Picture of the day
 
-
-const data = await fetchNasaApi() 
 buildPictureOfDay(data);
 

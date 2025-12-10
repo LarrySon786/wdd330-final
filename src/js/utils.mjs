@@ -127,7 +127,9 @@ export async function generateAndDisplayPrice(element, value, country) {
 
 // BUILD PICTURE OF DAY ON HOME PAGE
 
-export function buildPictureOfDay(data) {
+export async function buildPictureOfDay(data) {
+  const data = await fetchNasaApi(); 
+
   const parentElement = document.querySelector('#astronomy-picture-of-day');
   let picture = document.createElement('img');
   let explain = document.createElement('p');
