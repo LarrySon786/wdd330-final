@@ -14,5 +14,8 @@ export default defineConfig({
         get_started: resolve(__dirname, "src/get-started/index.html"), 
       },
     },
+    supported: {
+      'top-level-await': true
+    },
   },
 });
